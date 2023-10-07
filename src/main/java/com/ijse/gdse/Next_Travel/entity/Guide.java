@@ -25,6 +25,7 @@ public class Guide {
     private int contactNumber;
     private String gender;
     private String experience;
+    private double price;
 
     private String image1;
     private String image2;

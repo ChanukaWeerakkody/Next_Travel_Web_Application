@@ -1,7 +1,6 @@
 package com.ijse.gdse.Next_Travel.entity;
 
 import jakarta.persistence.Entity;
-
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -21,11 +20,18 @@ import java.io.Serializable;
 @Data
 @ToString
 @Entity
-public class Admin implements Serializable {
+public class Hotel implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long adminId;
-    private String username;
+    private Long hotelId;
+
+    private String name;
     private String category;
-    private String password;
+    private String location;
+    private String googleLocation;
+    private String email;
+    private int contact1;
+    private int contact2;
+    private String petOrNo;
+    private double price;
 }

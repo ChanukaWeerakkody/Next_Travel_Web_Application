@@ -13,8 +13,14 @@ import lombok.ToString;
 @NoArgsConstructor
 @Data
 @ToString
-public class AdminDTO {
-    private String username;
+public class HotelDTO {
+    private String name;
     private String category;
-    private String password;
+    private String location;
+    private String googleLocation;
+    private String email;
+    private int contact1;
+    private int contact2;
+    private String petOrNo;
+    private double price;
 }
