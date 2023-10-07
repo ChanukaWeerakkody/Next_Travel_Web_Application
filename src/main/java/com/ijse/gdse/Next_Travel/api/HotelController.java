@@ -19,8 +19,13 @@ public class HotelController {
     HotelService hotelService;
 
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseUtil saveCustomer(@ModelAttribute HotelDTO hotelDTO){
+    public ResponseUtil saveHotel(@ModelAttribute HotelDTO hotelDTO){
         hotelService.saveHotel(hotelDTO);
         return new ResponseUtil(200,"Success",hotelDTO);
+    }
+
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseUtil getAllHotels(){
+        return new ResponseUtil(200,"Success",hotelService.getAllHotelDetail());
     }
 }

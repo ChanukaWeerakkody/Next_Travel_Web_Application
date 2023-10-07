@@ -25,13 +25,13 @@ public class Hotel implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long hotelId;
 
-    private String name;
+    private String hotelName;
     private String category;
     private String location;
-    private String googleLocation;
+    private String address;
     private String email;
-    private int contact1;
-    private int contact2;
-    private String petOrNo;
-    private double price;
+    private int contactNumber1;
+    private int contactNumber2;
+    private String pet;
+    private double priceHotel;
 }
