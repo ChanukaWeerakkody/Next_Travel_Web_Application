@@ -1,0 +1,21 @@
+package com.ijse.gdse.Next_Travel.service;
+
+import com.ijse.gdse.Next_Travel.dto.GuideDTO;
+import com.ijse.gdse.Next_Travel.dto.VehicleDTO;
+
+import java.util.List;
+
+/**
+ * @author : Chanuka Weerakkody
+ * @since : 20.1.1
+ **/
+
+public interface VehicleService {
+    void saveVehicle(VehicleDTO dto);
+    void uploadVehicleImage(String carFrontViewPath, String carBackViewPath, String carSideViewPath, String carInteriorViewPath,String id);
+
+    void updateVehicle(VehicleDTO dto);
+    void deleteVehicle(Long id);
+    VehicleDTO searchVehicleById(String id);
+    List<VehicleDTO> getAllVehicleDetail();
+}
