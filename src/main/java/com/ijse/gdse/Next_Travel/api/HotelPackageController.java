@@ -24,4 +24,9 @@ public class HotelPackageController {
         hotelPackageService.savePackage(packageDTO);
         return new ResponseUtil(200,"Success",packageDTO);
     }
+
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseUtil getAllHotelPackages(){
+        return new ResponseUtil(200,"Success",hotelPackageService.getAllHotelPackageDetail());
+    }
 }
