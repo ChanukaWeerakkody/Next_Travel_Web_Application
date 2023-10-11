@@ -2,6 +2,7 @@ package com.ijse.gdse.Next_Travel.service.impl;
 
 import com.ijse.gdse.Next_Travel.dto.HotelDTO;
 import com.ijse.gdse.Next_Travel.dto.HotelPackageDTO;
+import com.ijse.gdse.Next_Travel.entity.Guide;
 import com.ijse.gdse.Next_Travel.entity.HotelPackage;
 import com.ijse.gdse.Next_Travel.repo.HotelPackageRepo;
 import com.ijse.gdse.Next_Travel.service.HotelPackageService;
@@ -34,12 +35,12 @@ public class HotelPackageServiceImpl implements HotelPackageService {
 
     @Override
     public void deletePackage(Long id) {
-
+        hotelPackageRepo.deleteById(id);
     }
 
     @Override
     public void updatePackage(HotelPackageDTO dto) {
-
+        hotelPackageRepo.save(modelMapper.map(dto, HotelPackage.class));
     }
 
     @Override
