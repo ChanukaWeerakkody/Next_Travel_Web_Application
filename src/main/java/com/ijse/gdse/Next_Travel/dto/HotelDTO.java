@@ -14,6 +14,7 @@ import lombok.ToString;
 @Data
 @ToString
 public class HotelDTO {
+    private Long hotelId;
     private String hotelName;
     private String category;
     private String location;

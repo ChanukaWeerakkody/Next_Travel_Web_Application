@@ -34,5 +34,5 @@ public class HotelPackage implements Serializable {
     private int noOfAdults;
     private int noOfChild;
     private int totalCount;
-
+    private double packagePrice;
 }

@@ -1,6 +1,5 @@
 package com.ijse.gdse.Next_Travel.dto;
 
-import com.ijse.gdse.Next_Travel.entity.Hotel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,6 +14,7 @@ import lombok.ToString;
 @Data
 @ToString
 public class HotelPackageDTO {
+    private Long packageId;
     private String hotelName;
     private String location;
     private String email;
@@ -27,4 +27,5 @@ public class HotelPackageDTO {
     private int noOfAdults;
     private int noOfChild;
     private int totalCount;
+    private double packagePrice;
 }

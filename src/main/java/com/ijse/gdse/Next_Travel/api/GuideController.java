@@ -83,10 +83,10 @@ public class GuideController {
     }
 
 
-    @DeleteMapping(params = {"vehicleId"},produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseUtil deleteCar(@RequestParam Long vehicleId){
-        guideService.deleteGuide(vehicleId);
-        return new ResponseUtil(200,vehicleId+" :Car Deleted.!",null);
+    @DeleteMapping(params = {"guideId"},produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseUtil deleteItem(@RequestParam Long guideId){
+        guideService.deleteGuide(guideId);
+        return new ResponseUtil(200,"Success",guideId);
     }
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)

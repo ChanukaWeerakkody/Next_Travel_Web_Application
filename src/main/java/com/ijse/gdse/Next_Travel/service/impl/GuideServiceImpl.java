@@ -50,7 +50,6 @@ public class GuideServiceImpl implements GuideService {
 
     @Override
     public GuideDTO searchGuideById(String guideId) {
-        /*return mapper.map( repo.getByGuideId(guideId),GuideDTO.class);*/
         return null;
     }
 

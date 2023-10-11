@@ -14,6 +14,7 @@ import lombok.ToString;
 @Data
 @ToString
 public class VehicleDTO {
+    private Long vehicleId;
     private String brand;
     private String subName;
     private String type; //Car , Van, Suv, Bus
