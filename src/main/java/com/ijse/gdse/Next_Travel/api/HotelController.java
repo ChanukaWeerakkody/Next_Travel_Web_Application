@@ -1,5 +1,6 @@
 package com.ijse.gdse.Next_Travel.api;
 
+import com.ijse.gdse.Next_Travel.dto.GuideDTO;
 import com.ijse.gdse.Next_Travel.dto.HotelDTO;
 import com.ijse.gdse.Next_Travel.service.HotelService;
 import com.ijse.gdse.Next_Travel.util.ResponseUtil;
@@ -27,5 +28,18 @@ public class HotelController {
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseUtil getAllHotels(){
         return new ResponseUtil(200,"Success",hotelService.getAllHotelDetail());
+    }
+
+    @PutMapping()
+    public ResponseUtil updateHotel(@RequestBody HotelDTO dto){
+        hotelService.updateHotel(dto);
+        return new ResponseUtil(200,"Success!"+": Updated.!",null);
+    }
+
+
+    @DeleteMapping(params = {"hotelId"},produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseUtil deleteHotel(@RequestParam Long hotelId){
+        hotelService.deleteHotel(hotelId);
+        return new ResponseUtil(200,"Success",hotelId);
     }
 }

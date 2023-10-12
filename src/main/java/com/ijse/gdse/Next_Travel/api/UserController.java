@@ -73,7 +73,7 @@ public class UserController {
     }
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseUtil getAllHotelPackages(){
+    public ResponseUtil getAllUsers(){
         return new ResponseUtil(200,"Success",userService.getAllUserDetail());
     }
 }

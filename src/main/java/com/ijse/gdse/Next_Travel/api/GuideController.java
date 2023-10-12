@@ -25,7 +25,7 @@ public class GuideController {
     GuideService guideService;
 
     @PostMapping(consumes = {MediaType.MULTIPART_FORM_DATA_VALUE}, produces = {MediaType.APPLICATION_JSON_VALUE})
-    public ResponseUtil addVehicle(@RequestPart("guideFiles") MultipartFile[] file, @RequestPart("guide") GuideDTO guideDTO) {
+    public ResponseUtil addGuide(@RequestPart("guideFiles") MultipartFile[] file, @RequestPart("guide") GuideDTO guideDTO) {
 
         for (MultipartFile myFile : file) {
             try {
@@ -77,14 +77,14 @@ public class GuideController {
     }
 
     @PutMapping()
-    public ResponseUtil updateCar(@RequestBody GuideDTO dto){
+    public ResponseUtil updateGuide(@RequestBody GuideDTO dto){
         guideService.updateGuide(dto);
         return new ResponseUtil(200,"Success!"+": Updated.!",null);
     }
 
 
     @DeleteMapping(params = {"guideId"},produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseUtil deleteItem(@RequestParam Long guideId){
+    public ResponseUtil deleteGuide(@RequestParam Long guideId){
         guideService.deleteGuide(guideId);
         return new ResponseUtil(200,"Success",guideId);
     }

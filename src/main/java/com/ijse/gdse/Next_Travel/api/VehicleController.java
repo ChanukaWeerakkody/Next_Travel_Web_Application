@@ -76,7 +76,7 @@ public class VehicleController {
     }
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseUtil getAllGuides(){
+    public ResponseUtil getAllVehicles(){
         return new ResponseUtil(200,"Success",vehicleService.getAllVehicleDetail());
     }
 }
