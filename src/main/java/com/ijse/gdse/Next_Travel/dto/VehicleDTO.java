@@ -17,13 +17,13 @@ public class VehicleDTO {
     private Long vehicleId;
     private String brand;
     private String subName;
-    private String type; //Car , Van, Suv, Bus
+    private String type;
     private String pata;
-    private String category;//Economic,Midrange,Luxury,Super Luxury
-    private String transmission;//auto/manual
+    private String category;
+    private String transmission;
     private String seatCapacity;
-    private String fuelType;//diesel,petrol
-    private String model;//hybrid,Non hybrid
+    private String fuelType;
+    private String model;
 
     private String image1;
     private String image2;

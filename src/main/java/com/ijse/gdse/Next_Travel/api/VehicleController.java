@@ -44,8 +44,8 @@ public class VehicleController {
     }
 
 
-    @PostMapping(path = "/uploadImg/{registrationNum}", consumes = {MediaType.MULTIPART_FORM_DATA_VALUE}, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseUtil uploadImagesAndPath(@RequestPart("image1") MultipartFile image1, @RequestPart("image2") MultipartFile image2, @RequestPart("image3") MultipartFile image3, @RequestPart("image4") MultipartFile image4, @PathVariable String id) {
+    @PostMapping(path = "/uploadImg/{vehicleId}", consumes = {MediaType.MULTIPART_FORM_DATA_VALUE}, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseUtil uploadImagesAndPath(@RequestPart("image1") MultipartFile image1, @RequestPart("image2") MultipartFile image2, @RequestPart("image3") MultipartFile image3, @RequestPart("image4") MultipartFile image4, @PathVariable String vehicleId) {
         try {
             System.out.println(image1.getOriginalFilename());
             System.out.println("Upload Image");
@@ -65,7 +65,7 @@ public class VehicleController {
             String carInteriorViewPath = projectPath + "\\carImage" + image4.getOriginalFilename();
 
 
-            vehicleService.uploadVehicleImage(carFrontViewPath, carBackViewPath, carSideViewPath, carInteriorViewPath,id);
+            vehicleService.uploadVehicleImage(carFrontViewPath, carBackViewPath, carSideViewPath, carInteriorViewPath,vehicleId);
 
             return new ResponseUtil(200, "Uploaded", null);
 
