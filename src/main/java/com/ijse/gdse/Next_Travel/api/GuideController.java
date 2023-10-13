@@ -93,4 +93,7 @@ public class GuideController {
     public ResponseUtil getAllGuides(){
         return new ResponseUtil(200,"Success",guideService.getAllGuideDetail());
     }
+
+
+
 }

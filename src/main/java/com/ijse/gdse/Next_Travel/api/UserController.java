@@ -1,11 +1,16 @@
 package com.ijse.gdse.Next_Travel.api;
 
+import com.ijse.gdse.Next_Travel.dto.AdminDTO;
 import com.ijse.gdse.Next_Travel.dto.UserDTO;
 import com.ijse.gdse.Next_Travel.dto.VehicleDTO;
+import com.ijse.gdse.Next_Travel.entity.Admin;
+import com.ijse.gdse.Next_Travel.entity.User;
+import com.ijse.gdse.Next_Travel.repo.UserRepo;
 import com.ijse.gdse.Next_Travel.service.UserService;
 import com.ijse.gdse.Next_Travel.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -24,8 +29,11 @@ public class UserController {
     @Autowired
     UserService userService;
 
+    @Autowired
+    UserRepo userRepo;
+
     @PostMapping(consumes = {MediaType.MULTIPART_FORM_DATA_VALUE}, produces = {MediaType.APPLICATION_JSON_VALUE})
-    public ResponseUtil addUser(@RequestPart("vehicleFiles") MultipartFile[] file, @RequestPart("vehicle") UserDTO userDTO) {
+    public ResponseUtil addUser(@RequestPart("userFiles") MultipartFile[] file, @RequestPart("user") UserDTO userDTO) {
 
         for (MultipartFile myFile : file) {
             try {
@@ -75,5 +83,23 @@ public class UserController {
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseUtil getAllUsers(){
         return new ResponseUtil(200,"Success",userService.getAllUserDetail());
+    }
+
+
+    @PostMapping("/login")
+    public ResponseEntity<String> login(@RequestBody UserDTO userDTO) {
+        String username = userDTO.getUsername();
+        String password = userDTO.getPassword();
+
+        User user = userRepo.findByUsername(username);
+
+        if (user == null) {
+            return ResponseEntity.status(401).body("Invalid credentials");
+        }
+
+        if (!user.getPassword().equals(password)) {
+            return ResponseEntity.status(401).body("Invalid credentials");
+        }
+        return ResponseEntity.ok("Login successful");
     }
 }

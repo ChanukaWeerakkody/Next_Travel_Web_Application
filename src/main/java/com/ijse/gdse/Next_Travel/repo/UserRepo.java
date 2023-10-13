@@ -1,5 +1,6 @@
 package com.ijse.gdse.Next_Travel.repo;
 
+import com.ijse.gdse.Next_Travel.entity.Admin;
 import com.ijse.gdse.Next_Travel.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
@@ -17,4 +18,6 @@ public interface UserRepo extends JpaRepository<User,Long> {
     @Transactional
     @Query(value= "UPDATE User SET image1=:image1,image2=:image2 WHERE userId=:id",nativeQuery=true)
     void updateUserFilePaths(@Param("image1")String image1, @Param("image2")String image2, @Param("id")String id);
+
+    User findByUsername(String username);
 }
