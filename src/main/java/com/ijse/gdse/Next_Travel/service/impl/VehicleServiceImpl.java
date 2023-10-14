@@ -41,12 +41,12 @@ public class VehicleServiceImpl implements VehicleService {
 
     @Override
     public void updateVehicle(VehicleDTO dto) {
-
+        vehicleRepo.save(mapper.map(dto, Vehicle.class));
     }
 
     @Override
     public void deleteVehicle(Long id) {
-
+        vehicleRepo.deleteById(id);
     }
 
     @Override

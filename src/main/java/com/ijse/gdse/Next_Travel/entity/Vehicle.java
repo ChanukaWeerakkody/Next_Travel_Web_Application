@@ -35,6 +35,7 @@ public class Vehicle implements Serializable {
     private String seatCapacity;
     private String fuelType;//diesel,petrol
     private String model;//hybrid,Non hybrid
+    private double pricePerKM;
 
     private String image1;
     private String image2;

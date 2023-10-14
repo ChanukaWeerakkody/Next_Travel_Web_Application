@@ -79,4 +79,18 @@ public class VehicleController {
     public ResponseUtil getAllVehicles(){
         return new ResponseUtil(200,"Success",vehicleService.getAllVehicleDetail());
     }
+
+
+    @PutMapping()
+    public ResponseUtil updateGuide(@RequestBody VehicleDTO dto){
+        vehicleService.updateVehicle(dto);
+        return new ResponseUtil(200,"Success!"+": Updated.!",null);
+    }
+
+
+    @DeleteMapping(params = {"vehicleId"},produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseUtil deleteGuide(@RequestParam Long vehicleId){
+        vehicleService.deleteVehicle(vehicleId);
+        return new ResponseUtil(200,"Success",vehicleId);
+    }
 }

@@ -24,6 +24,7 @@ public class VehicleDTO {
     private String seatCapacity;
     private String fuelType;
     private String model;
+    private double pricePerKM;
 
     private String image1;
     private String image2;
