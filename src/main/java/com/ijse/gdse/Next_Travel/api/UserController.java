@@ -1,6 +1,7 @@
 package com.ijse.gdse.Next_Travel.api;
 
 import com.ijse.gdse.Next_Travel.dto.AdminDTO;
+import com.ijse.gdse.Next_Travel.dto.GuideDTO;
 import com.ijse.gdse.Next_Travel.dto.UserDTO;
 import com.ijse.gdse.Next_Travel.dto.VehicleDTO;
 import com.ijse.gdse.Next_Travel.entity.Admin;
@@ -101,5 +102,18 @@ public class UserController {
             return ResponseEntity.status(401).body("Invalid credentials");
         }
         return ResponseEntity.ok("Login successful");
+    }
+
+    @PutMapping()
+    public ResponseUtil updateGuide(@RequestBody UserDTO dto){
+        userService.updateUser(dto);
+        return new ResponseUtil(200,"Success!"+": Updated.!",null);
+    }
+
+
+    @DeleteMapping(params = {"userId"},produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseUtil deleteGuide(@RequestParam Long userId){
+        userService.deleteUser(userId);
+        return new ResponseUtil(200,"Success",userId);
     }
 }

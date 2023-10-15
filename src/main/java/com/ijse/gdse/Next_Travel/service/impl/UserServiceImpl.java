@@ -40,12 +40,12 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void updateUser(UserDTO dto) {
-
+        userRepo.save(mapper.map(dto, User.class));
     }
 
     @Override
     public void deleteUser(Long id) {
-
+        userRepo.deleteById(id);
     }
 
     @Override
