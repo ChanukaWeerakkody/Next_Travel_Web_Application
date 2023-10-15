@@ -4,11 +4,11 @@ import com.ijse.gdse.Next_Travel.dto.VehicleOrderDetailsDTO;
 import com.ijse.gdse.Next_Travel.dto.VehicleOrdersDTO;
 import com.ijse.gdse.Next_Travel.dto.UserDTO;
 import com.ijse.gdse.Next_Travel.entity.*;
-import com.ijse.gdse.Next_Travel.repo.OrderDetailsRepo;
-import com.ijse.gdse.Next_Travel.repo.OrdersRepo;
+import com.ijse.gdse.Next_Travel.repo.VehicleOrderDetailsRepo;
+import com.ijse.gdse.Next_Travel.repo.VehicleOrdersRepo;
 import com.ijse.gdse.Next_Travel.repo.UserRepo;
 import com.ijse.gdse.Next_Travel.repo.VehicleRepo;
-import com.ijse.gdse.Next_Travel.service.PurchaseOrderService;
+import com.ijse.gdse.Next_Travel.service.VehiclePurchaseOrderService;
 import jakarta.transaction.Transactional;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,18 +23,13 @@ import java.util.stream.Collectors;
  **/
 @Service
 @Transactional
-public class PurchaseOrderServiceImpl implements PurchaseOrderService {
-    @Autowired
-    private VehicleRepo vehicleRepo;
+public class VehiclePurchaseOrderServiceImpl implements VehiclePurchaseOrderService {
 
     @Autowired
     UserRepo userRepo;
 
     @Autowired
-    private OrdersRepo ordersRepo;
-
-    @Autowired
-    private OrderDetailsRepo orderDetailsRepo;
+    private VehicleOrdersRepo ordersRepo;
 
     @Autowired
     private ModelMapper mapper;

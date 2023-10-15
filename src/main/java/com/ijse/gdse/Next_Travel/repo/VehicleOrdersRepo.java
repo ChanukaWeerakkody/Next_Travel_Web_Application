@@ -1,6 +1,6 @@
 package com.ijse.gdse.Next_Travel.repo;
 
-import com.ijse.gdse.Next_Travel.entity.VehicleOrderDetails;
+import com.ijse.gdse.Next_Travel.entity.VehicleOrders;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
@@ -8,5 +8,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @since : 20.1.1
  **/
 
-public interface OrderDetailsRepo extends JpaRepository<VehicleOrderDetails,Long> {
+public interface VehicleOrdersRepo extends JpaRepository<VehicleOrders,Long> {
 }

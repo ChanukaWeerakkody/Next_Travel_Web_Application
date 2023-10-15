@@ -1,5 +1,6 @@
 package com.ijse.gdse.Next_Travel.service;
 
+import com.ijse.gdse.Next_Travel.dto.GuideOrderDTO;
 import com.ijse.gdse.Next_Travel.dto.VehicleOrdersDTO;
 
 /**
@@ -7,6 +8,6 @@ import com.ijse.gdse.Next_Travel.dto.VehicleOrdersDTO;
  * @since : 20.1.1
  **/
 
-public interface PurchaseOrderService {
-    void purchaseOrder(VehicleOrdersDTO dto);
+public interface GuidePurchaseOrderService {
+    void purchaseOrderGuide(GuideOrderDTO dto);
 }
