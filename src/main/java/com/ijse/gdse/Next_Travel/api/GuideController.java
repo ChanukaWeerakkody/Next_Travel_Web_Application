@@ -1,6 +1,6 @@
 package com.ijse.gdse.Next_Travel.api;
 
-import com.ijse.gdse.Next_Travel.dto.GuideDTO;
+import com.ijse.gdse.Next_Travel.dto.guide.GuideDTO;
 import com.ijse.gdse.Next_Travel.service.GuideService;
 import com.ijse.gdse.Next_Travel.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;

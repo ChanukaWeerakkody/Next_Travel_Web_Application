@@ -1,7 +1,6 @@
 package com.ijse.gdse.Next_Travel.api;
 
-import com.ijse.gdse.Next_Travel.dto.GuideDTO;
-import com.ijse.gdse.Next_Travel.dto.VehicleDTO;
+import com.ijse.gdse.Next_Travel.dto.vehicle.VehicleDTO;
 import com.ijse.gdse.Next_Travel.service.VehicleService;
 import com.ijse.gdse.Next_Travel.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;

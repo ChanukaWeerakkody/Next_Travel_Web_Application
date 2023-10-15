@@ -1,8 +1,7 @@
 package com.ijse.gdse.Next_Travel.service;
 
-import com.ijse.gdse.Next_Travel.dto.HotelDTO;
-import com.ijse.gdse.Next_Travel.dto.HotelPackageDTO;
-import com.ijse.gdse.Next_Travel.entity.HotelPackage;
+import com.ijse.gdse.Next_Travel.dto.hotelPackage.HotelPackageDTO;
+import com.ijse.gdse.Next_Travel.entity.hotelPackage.HotelPackage;
 
 import java.util.List;
 

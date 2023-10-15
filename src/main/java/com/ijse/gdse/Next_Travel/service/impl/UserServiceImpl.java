@@ -1,9 +1,7 @@
 package com.ijse.gdse.Next_Travel.service.impl;
 
 import com.ijse.gdse.Next_Travel.dto.UserDTO;
-import com.ijse.gdse.Next_Travel.dto.VehicleDTO;
 import com.ijse.gdse.Next_Travel.entity.User;
-import com.ijse.gdse.Next_Travel.entity.Vehicle;
 import com.ijse.gdse.Next_Travel.repo.UserRepo;
 import com.ijse.gdse.Next_Travel.service.UserService;
 import jakarta.transaction.Transactional;

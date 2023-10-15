@@ -1,7 +1,6 @@
 package com.ijse.gdse.Next_Travel.service;
 
-import com.ijse.gdse.Next_Travel.dto.GuideDTO;
-import com.ijse.gdse.Next_Travel.dto.VehicleDTO;
+import com.ijse.gdse.Next_Travel.dto.vehicle.VehicleDTO;
 
 import java.util.List;
 

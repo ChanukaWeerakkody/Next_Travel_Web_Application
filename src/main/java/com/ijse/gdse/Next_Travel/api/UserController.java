@@ -1,10 +1,6 @@
 package com.ijse.gdse.Next_Travel.api;
 
-import com.ijse.gdse.Next_Travel.dto.AdminDTO;
-import com.ijse.gdse.Next_Travel.dto.GuideDTO;
 import com.ijse.gdse.Next_Travel.dto.UserDTO;
-import com.ijse.gdse.Next_Travel.dto.VehicleDTO;
-import com.ijse.gdse.Next_Travel.entity.Admin;
 import com.ijse.gdse.Next_Travel.entity.User;
 import com.ijse.gdse.Next_Travel.repo.UserRepo;
 import com.ijse.gdse.Next_Travel.service.UserService;

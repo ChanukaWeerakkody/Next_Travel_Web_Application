@@ -1,8 +1,8 @@
 package com.ijse.gdse.Next_Travel.service.impl;
 
-import com.ijse.gdse.Next_Travel.dto.GuideDTO;
-import com.ijse.gdse.Next_Travel.entity.Guide;
-import com.ijse.gdse.Next_Travel.repo.GuideRepo;
+import com.ijse.gdse.Next_Travel.dto.guide.GuideDTO;
+import com.ijse.gdse.Next_Travel.entity.guide.Guide;
+import com.ijse.gdse.Next_Travel.repo.guide.GuideRepo;
 import com.ijse.gdse.Next_Travel.service.GuideService;
 import jakarta.transaction.Transactional;
 import org.modelmapper.ModelMapper;

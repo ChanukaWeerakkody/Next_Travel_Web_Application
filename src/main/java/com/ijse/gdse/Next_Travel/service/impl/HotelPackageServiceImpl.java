@@ -1,10 +1,8 @@
 package com.ijse.gdse.Next_Travel.service.impl;
 
-import com.ijse.gdse.Next_Travel.dto.HotelDTO;
-import com.ijse.gdse.Next_Travel.dto.HotelPackageDTO;
-import com.ijse.gdse.Next_Travel.entity.Guide;
-import com.ijse.gdse.Next_Travel.entity.HotelPackage;
-import com.ijse.gdse.Next_Travel.repo.HotelPackageRepo;
+import com.ijse.gdse.Next_Travel.dto.hotelPackage.HotelPackageDTO;
+import com.ijse.gdse.Next_Travel.entity.hotelPackage.HotelPackage;
+import com.ijse.gdse.Next_Travel.repo.hotelPackage.HotelPackageRepo;
 import com.ijse.gdse.Next_Travel.service.HotelPackageService;
 import jakarta.transaction.Transactional;
 import org.modelmapper.ModelMapper;

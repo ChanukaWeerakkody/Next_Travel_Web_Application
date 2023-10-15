@@ -1,13 +1,13 @@
 package com.ijse.gdse.Next_Travel.service.impl;
 
-import com.ijse.gdse.Next_Travel.dto.VehicleOrderDetailsDTO;
-import com.ijse.gdse.Next_Travel.dto.VehicleOrdersDTO;
+import com.ijse.gdse.Next_Travel.dto.vehicle.VehicleOrderDetailsDTO;
+import com.ijse.gdse.Next_Travel.dto.vehicle.VehicleOrdersDTO;
 import com.ijse.gdse.Next_Travel.dto.UserDTO;
 import com.ijse.gdse.Next_Travel.entity.*;
-import com.ijse.gdse.Next_Travel.repo.VehicleOrderDetailsRepo;
-import com.ijse.gdse.Next_Travel.repo.VehicleOrdersRepo;
+import com.ijse.gdse.Next_Travel.entity.vehicle.VehicleOrderDetails;
+import com.ijse.gdse.Next_Travel.entity.vehicle.VehicleOrders;
+import com.ijse.gdse.Next_Travel.repo.vehicle.VehicleOrdersRepo;
 import com.ijse.gdse.Next_Travel.repo.UserRepo;
-import com.ijse.gdse.Next_Travel.repo.VehicleRepo;
 import com.ijse.gdse.Next_Travel.service.VehiclePurchaseOrderService;
 import jakarta.transaction.Transactional;
 import org.modelmapper.ModelMapper;

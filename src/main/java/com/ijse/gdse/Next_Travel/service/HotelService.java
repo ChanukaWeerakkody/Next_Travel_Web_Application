@@ -1,6 +1,6 @@
 package com.ijse.gdse.Next_Travel.service;
 
-import com.ijse.gdse.Next_Travel.dto.HotelDTO;
+import com.ijse.gdse.Next_Travel.dto.hotel.HotelDTO;
 
 import java.util.List;
 

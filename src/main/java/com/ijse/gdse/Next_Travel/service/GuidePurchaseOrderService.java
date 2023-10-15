@@ -1,7 +1,6 @@
 package com.ijse.gdse.Next_Travel.service;
 
-import com.ijse.gdse.Next_Travel.dto.GuideOrderDTO;
-import com.ijse.gdse.Next_Travel.dto.VehicleOrdersDTO;
+import com.ijse.gdse.Next_Travel.dto.guide.GuideOrderDTO;
 
 /**
  * @author : Chanuka Weerakkody
