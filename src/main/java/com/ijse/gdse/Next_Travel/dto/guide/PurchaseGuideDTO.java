@@ -1,12 +1,11 @@
 package com.ijse.gdse.Next_Travel.dto.guide;
 
-import com.ijse.gdse.Next_Travel.dto.UserDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import java.util.List;
+import java.io.Serializable;
 
 /**
  * @author : Chanuka Weerakkody
@@ -16,9 +15,11 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 @ToString
-public class GuideOrderDTO {
-    private Long oid;
-    private String date;
-    private UserDTO user;
-    private List<GuideOrderDetailsDTO> ordersDetails;
+public class PurchaseGuideDTO implements Serializable {
+    private Long guideOid;
+    private Long guideId;
+    private double pricePerDay;
+    private int days;
+    private double fullPrice;
+    private String userId;
 }

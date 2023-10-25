@@ -1,6 +1,6 @@
 package com.ijse.gdse.Next_Travel.repo.guide;
 
-import com.ijse.gdse.Next_Travel.entity.guide.GuideOrders;
+import com.ijse.gdse.Next_Travel.entity.guide.PurchaseGuide;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
@@ -8,5 +8,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @since : 20.1.1
  **/
 
-public interface GuideOrdersRepo extends JpaRepository<GuideOrders,Long> {
+public interface PurchaseGuideRepo extends JpaRepository<PurchaseGuide,Long> {
 }

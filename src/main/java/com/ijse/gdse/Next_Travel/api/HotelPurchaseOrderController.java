@@ -1,8 +1,6 @@
 package com.ijse.gdse.Next_Travel.api;
 
-import com.ijse.gdse.Next_Travel.dto.guide.GuideOrderDTO;
 import com.ijse.gdse.Next_Travel.dto.hotel.HotelOrderDTO;
-import com.ijse.gdse.Next_Travel.service.GuidePurchaseOrderService;
 import com.ijse.gdse.Next_Travel.service.HotelPurchaseOrderService;
 import com.ijse.gdse.Next_Travel.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;

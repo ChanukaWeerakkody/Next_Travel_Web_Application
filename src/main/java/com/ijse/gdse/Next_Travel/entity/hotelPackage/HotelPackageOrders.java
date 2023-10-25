@@ -1,7 +1,6 @@
 package com.ijse.gdse.Next_Travel.entity.hotelPackage;
 
 import com.ijse.gdse.Next_Travel.entity.User;
-import com.ijse.gdse.Next_Travel.entity.guide.GuideOrderDetails;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,16 +1,12 @@
 package com.ijse.gdse.Next_Travel.service.impl;
 
 import com.ijse.gdse.Next_Travel.dto.UserDTO;
-import com.ijse.gdse.Next_Travel.dto.guide.GuideOrderDetailsDTO;
 import com.ijse.gdse.Next_Travel.dto.hotelPackage.HotelPackageOrderDTO;
 import com.ijse.gdse.Next_Travel.dto.hotelPackage.HotelPackageOrderDetailsDTO;
 import com.ijse.gdse.Next_Travel.entity.User;
-import com.ijse.gdse.Next_Travel.entity.guide.GuideOrderDetails;
-import com.ijse.gdse.Next_Travel.entity.guide.GuideOrders;
 import com.ijse.gdse.Next_Travel.entity.hotelPackage.HotelPackageOrderDetails;
 import com.ijse.gdse.Next_Travel.entity.hotelPackage.HotelPackageOrders;
 import com.ijse.gdse.Next_Travel.repo.UserRepo;
-import com.ijse.gdse.Next_Travel.repo.guide.GuideOrdersRepo;
 import com.ijse.gdse.Next_Travel.repo.hotelPackage.HotelPackageOrdersRepo;
 import com.ijse.gdse.Next_Travel.service.HotelPackagePurchaseOrderService;
 import jakarta.transaction.Transactional;

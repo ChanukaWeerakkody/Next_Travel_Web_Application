@@ -1,7 +1,6 @@
 package com.ijse.gdse.Next_Travel.dto.hotel;
 
 import com.ijse.gdse.Next_Travel.dto.UserDTO;
-import com.ijse.gdse.Next_Travel.dto.guide.GuideOrderDetailsDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
