@@ -1,6 +1,6 @@
 package com.ijse.gdse.Next_Travel.repo.hotel;
 
-import com.ijse.gdse.Next_Travel.entity.hotel.HotelOrders;
+import com.ijse.gdse.Next_Travel.entity.hotel.PurchaseHotel;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
@@ -8,5 +8,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @since : 20.1.1
  **/
 
-public interface HotelOrdersRepo extends JpaRepository<HotelOrders,Long> {
+public interface PurchaseHotelRepo extends JpaRepository<PurchaseHotel,Long> {
 }
