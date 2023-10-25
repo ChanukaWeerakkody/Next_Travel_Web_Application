@@ -1,12 +1,9 @@
 package com.ijse.gdse.Next_Travel.dto.hotelPackage;
 
-import com.ijse.gdse.Next_Travel.dto.UserDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-
-import java.util.List;
 
 /**
  * @author : Chanuka Weerakkody
@@ -16,9 +13,11 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 @ToString
-public class HotelPackageOrderDTO {
-    private Long oid;
-    private String date;
-    private UserDTO user;
-    private List<HotelPackageOrderDetailsDTO> ordersDetails;
+public class PurchaseHotelPackageDTO {
+    private Long packageOid;
+    private Long packageId;
+    private double pricePerDay;
+    private int days;
+    private double fullPrice;
+    private String userId;
 }
