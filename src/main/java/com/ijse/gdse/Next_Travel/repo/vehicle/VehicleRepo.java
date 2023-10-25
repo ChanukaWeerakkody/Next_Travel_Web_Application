@@ -15,6 +15,6 @@ import org.springframework.transaction.annotation.Transactional;
 public interface VehicleRepo extends JpaRepository<Vehicle,Long> {
     @Modifying
     @Transactional
-    @Query(value= "UPDATE Vehicle SET image1=:image1,image2=:image2, image3=:image3, image4=:image4 WHERE registerId=:id",nativeQuery=true)
-    void updateVehicleFilePaths(@Param("image1")String image1, @Param("image2")String image2, @Param("image3")String image3, @Param("image4")String image4, @Param("id")String id);
+    @Query(value= "UPDATE Vehicle SET image1=:image1,image2=:image2, image3=:image3, image4=:image4 WHERE vehicleId=:vehicleId",nativeQuery=true)
+    void updateVehicleFilePaths(@Param("image1")String image1, @Param("image2")String image2, @Param("image3")String image3, @Param("image4")String image4, @Param("vehicleId")Long vehicleId);
 }

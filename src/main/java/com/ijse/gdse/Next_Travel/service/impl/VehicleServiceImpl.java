@@ -32,7 +32,7 @@ public class VehicleServiceImpl implements VehicleService {
     }
 
     @Override
-    public void uploadVehicleImage(String frontPath, String BackPath, String sidePath, String InteriorPath, String id) {
+    public void uploadVehicleImage(String frontPath, String BackPath, String sidePath, String InteriorPath, Long id) {
         System.out.println("Car Impl-if");
         vehicleRepo.updateVehicleFilePaths(frontPath, BackPath, sidePath,InteriorPath, id);
     }
@@ -55,5 +55,10 @@ public class VehicleServiceImpl implements VehicleService {
     @Override
     public List<VehicleDTO> getAllVehicleDetail() {
         return mapper.map(vehicleRepo.findAll(), new TypeToken<List<VehicleDTO>>() {}.getType());
+    }
+
+    @Override
+    public void uploadCarImage(String frontPath, String BackPath, String sidePath, String InteriorPath, Long vehicleId) {
+        vehicleRepo.updateVehicleFilePaths(frontPath, BackPath, sidePath,InteriorPath, vehicleId);
     }
 }
