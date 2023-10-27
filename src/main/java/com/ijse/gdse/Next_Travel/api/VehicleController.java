@@ -38,6 +38,7 @@ public class VehicleController {
                 return new ResponseUtil(500, "Registration Failed.Try Again Latter", null);
             }
         }
+
         vehicleService.saveVehicle(vehicleDTO);
         return new ResponseUtil(200, "Registration Successfully....", vehicleDTO);
     }

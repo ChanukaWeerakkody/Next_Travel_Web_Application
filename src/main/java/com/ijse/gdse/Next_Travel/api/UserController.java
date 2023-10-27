@@ -83,7 +83,7 @@ public class UserController {
     }
 
 
-    @PostMapping("/loginUser")
+    @PostMapping("/login")
     public ResponseEntity<String> login(@RequestBody UserDTO userDTO) {
         String username = userDTO.getUsername();
         String password = userDTO.getPassword();
