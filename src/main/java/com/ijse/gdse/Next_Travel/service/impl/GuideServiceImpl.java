@@ -55,7 +55,8 @@ public class GuideServiceImpl implements GuideService {
 
     @Override
     public List<GuideDTO> getAllGuideDetail() {
-        return mapper.map(repo.findAll(), new TypeToken<List<GuideDTO>>() {}.getType());
+        /*return mapper.map(repo.findAll(), new TypeToken<List<GuideDTO>>() {}.getType());*/
+        return null;
     }
 
 
