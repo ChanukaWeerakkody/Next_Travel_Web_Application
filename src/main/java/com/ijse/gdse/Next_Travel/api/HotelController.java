@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/hotel")
 @CrossOrigin
 public class HotelController {
-    @Autowired
+    /*@Autowired
     HotelService hotelService;
 
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
@@ -40,5 +40,5 @@ public class HotelController {
     public ResponseUtil deleteHotel(@RequestParam Long hotelId){
         hotelService.deleteHotel(hotelId);
         return new ResponseUtil(200,"Success",hotelId);
-    }
+    }*/
 }
