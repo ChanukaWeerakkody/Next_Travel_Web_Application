@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/package")
 @CrossOrigin
 public class HotelPackageController {
-    @Autowired
+    /*@Autowired
     HotelPackageService hotelPackageService;
 
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
@@ -40,5 +40,5 @@ public class HotelPackageController {
     public ResponseUtil deleteHotelPackage(@RequestParam Long packageId){
         hotelPackageService.deletePackage(packageId);
         return new ResponseUtil(200,"Success",packageId);
-    }
+    }*/
 }
