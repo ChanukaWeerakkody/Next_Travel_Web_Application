@@ -1,9 +1,8 @@
 package com.ijse.gdse.Next_Travel.service.impl;
 
 import com.ijse.gdse.Next_Travel.dto.PurchaseOrderDTO;
-import com.ijse.gdse.Next_Travel.dto.vehicle.PurchaseVehicleDTO;
+
 import com.ijse.gdse.Next_Travel.entity.PurchaseOrder;
-import com.ijse.gdse.Next_Travel.entity.vehicle.PurchaseVehicle;
 import com.ijse.gdse.Next_Travel.repo.PurchaseOrderRepo;
 import com.ijse.gdse.Next_Travel.service.PurchaseOrderService;
 import jakarta.transaction.Transactional;
