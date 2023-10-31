@@ -23,7 +23,7 @@ import java.net.URISyntaxException;
 @RequestMapping("/user")
 @CrossOrigin
 public class UserController {
-    @Autowired
+   /* @Autowired
     UserService userService;
 
     @Autowired
@@ -111,5 +111,5 @@ public class UserController {
     public ResponseUtil deleteGuide(@RequestParam Long userId){
         userService.deleteUser(userId);
         return new ResponseUtil(200,"Success",userId);
-    }
+    }*/
 }
