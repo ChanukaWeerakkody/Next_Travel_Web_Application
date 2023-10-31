@@ -21,7 +21,7 @@ import java.net.URISyntaxException;
 @CrossOrigin
 public class GuideController {
 
-    @Autowired
+   /* @Autowired
     GuideService guideService;
 
     @PostMapping(consumes = {MediaType.MULTIPART_FORM_DATA_VALUE}, produces = {MediaType.APPLICATION_JSON_VALUE})
@@ -92,7 +92,7 @@ public class GuideController {
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseUtil getAllGuides(){
         return new ResponseUtil(200,"Success",guideService.getAllGuideDetail());
-    }
+    }*/
 
 
 
