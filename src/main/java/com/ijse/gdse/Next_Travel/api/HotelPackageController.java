@@ -36,7 +36,6 @@ public class HotelPackageController {
         return new ResponseUtil(200,"Success!"+": Updated.!",null);
     }
 
-
     @DeleteMapping(params = {"packageId"},produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseUtil deleteHotelPackage(@RequestParam Long packageId){
         hotelPackageService.deletePackage(packageId);

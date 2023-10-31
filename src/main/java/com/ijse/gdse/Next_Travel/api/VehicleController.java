@@ -20,7 +20,7 @@ import java.net.URISyntaxException;
 @RequestMapping("/vehicle")
 @CrossOrigin
 public class VehicleController {
-    @Autowired
+    /*@Autowired
     VehicleService vehicleService;
 
     @PostMapping(consumes = {MediaType.MULTIPART_FORM_DATA_VALUE}, produces = {MediaType.APPLICATION_JSON_VALUE})
@@ -92,36 +92,6 @@ public class VehicleController {
     public ResponseUtil deleteGuide(@RequestParam Long vehicleId){
         vehicleService.deleteVehicle(vehicleId);
         return new ResponseUtil(200,"Success",vehicleId);
-    }
-    /*@PostMapping(path = "/uploadImg/{vehicleId}", consumes = {MediaType.MULTIPART_FORM_DATA_VALUE}, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseUtil uploadImagesAndPath(@RequestPart("image1") MultipartFile image1, @RequestPart("image2") MultipartFile image2, @RequestPart("image3") MultipartFile image3, @RequestPart("image4") MultipartFile image4, @PathVariable Long vehicleId) {
-        try {
-
-
-            System.out.println(image1.getOriginalFilename());
-            System.out.println("Upload Image");
-
-            String projectPath = String.valueOf(new File("E:\\imageSave\\uploads"));
-            File uploadsDir = new File(projectPath + "\\carImage");
-            uploadsDir.mkdir();
-
-            image1.transferTo(new File(uploadsDir.getAbsolutePath() + "\\" + image1.getOriginalFilename()));
-            image2.transferTo(new File(uploadsDir.getAbsolutePath() + "\\" + image2.getOriginalFilename()));
-            image3.transferTo(new File(uploadsDir.getAbsolutePath() + "\\" + image3.getOriginalFilename()));
-            image4.transferTo(new File(uploadsDir.getAbsolutePath() + "\\" + image4.getOriginalFilename()));
-
-            String carFrontViewPath = projectPath + "\\carImage" + image1.getOriginalFilename();
-            String carBackViewPath = projectPath + "\\carImage" + image2.getOriginalFilename();
-            String carSideViewPath = projectPath + "\\carImage" + image3.getOriginalFilename();
-            String carInteriorViewPath = projectPath + "\\carImage" + image4.getOriginalFilename();
-
-            vehicleService.uploadCarImage(carFrontViewPath, carBackViewPath, carSideViewPath, carInteriorViewPath, vehicleId);
-
-            return new ResponseUtil(200, "Uploaded", null);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-            return new ResponseUtil(500,e.getMessage(),null);
-        }
     }*/
+
 }
